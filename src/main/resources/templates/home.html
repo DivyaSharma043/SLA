@@ -1,0 +1,51 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url(https://wallup.net/wp-content/uploads/2015/12/88560-abstract-Jared_Nickerson-profile-purple_background-face.jpg);
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+</head>
+<body>
+<div class="bgimg">
+    <div class="middle">
+        <h1>WELCOME <span th:text = "${name}" /> </h1>
+        <hr>
+        <p>In Racloop World</p>
+    </div>
+    <div>
+        <button style="margin-top: 45%"><a href="/logout">LOGOUT</a> </button>
+    </div>
+
+</div>
+</body>
+</html>
