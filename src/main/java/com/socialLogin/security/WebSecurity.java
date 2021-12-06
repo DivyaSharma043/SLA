@@ -23,6 +23,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
                 .authenticated()
                 .and()
                 .oauth2Login()
+                .defaultSuccessUrl("/home",true)
                 .and()
                 .logout()
 //                .logoutSuccessUrl("/")
